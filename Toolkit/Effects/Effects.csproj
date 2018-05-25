@@ -12,6 +12,7 @@
     <PackageTags>xamarin, windows, ios, android, xamarin.forms, toolkit</PackageTags>
     <Title>Xamarin Community Toolkit Effects Library</Title>
     <Description>Xamarin Community Toolkit Effects Library</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,8 +26,6 @@
     <Compile Include="**\*.netstandard.*.cs" />
   </ItemGroup>
   <ItemGroup Condition=" $(TargetFramework.StartsWith('uap10.0')) ">
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.0.6" />
-    <PackageReference Include="Win2D.uwp" Version="1.21.0" />
     <Compile Include="**\*.uwp.cs" />
     <Compile Include="**\*.uwp.*.cs" />
   </ItemGroup>
